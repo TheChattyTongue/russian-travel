@@ -11,6 +11,14 @@
     align-items: center;
 }
 
+.cover:hover {
+    cursor: pointer;
+}
+
+.cover:hover .cover__overlay {
+    opacity: 0.8;
+}
+
 @media screen and (max-width: 1024px) {
     .cover {
         max-width: 1024px;

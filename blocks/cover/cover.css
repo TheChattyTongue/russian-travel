@@ -2,7 +2,7 @@
     max-width: 1184px;
     position: relative;
     min-height: 740px;
-    margin: 0 auto 92px;
+    margin: 0 auto 87px;
     background-image: url(../../images/cover-trains.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,11 +14,19 @@
     font-family: "Inter", serif, sans-serif;
 }
 
-.cover:hover {
-    cursor: pointer;
+.cover::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2A2C2F;
+    opacity: 0.3;
+    transition: 1.5s;
 }
 
-.cover:hover .cover__overlay {
+.cover:hover::after {
     opacity: 0.8;
 }
 

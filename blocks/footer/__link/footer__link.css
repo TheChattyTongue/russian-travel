@@ -17,12 +17,6 @@
     opacity: 0.8;
 }
 
-@media screen and (max-width: 1024px) {
-    .footer__link {
-        padding: 0 15px 0 0;
-    }
-}
-
 @media screen and (max-width: 576px) {
     .footer__link {
         display: block;
@@ -33,6 +27,6 @@
     }
 
     .footer__link:last-child {
-        margin: 0 0 44px 0;
+        margin-bottom: 48px;
     }
 }
